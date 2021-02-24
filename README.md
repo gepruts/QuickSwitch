@@ -1,2 +1,2 @@
 # QuickSwitch
-Uses opened file manager folders in File dialogs
+Use opened file manager folders in File dialogs
