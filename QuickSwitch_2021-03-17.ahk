@@ -631,7 +631,7 @@ Return
 	$DialogAction := 1
 
 	$FolderPath := Get_Zfolder($WinID)
-	MsgBox FolderPath = %$FolderPath%
+;	MsgBox FolderPath = %$FolderPath%
 
 	If ( ValidFolder( $FolderPath ))
 	{ 
@@ -1013,10 +1013,14 @@ FeedDialog routine
 - TEST !!!
 - New menu /UI (no inspiration yet on how that should look ..)
 - Support paths > 259 ? (max length menu text = 260, so requirea a new menu) 
-? Add menu: debugging > list all controls (+text)?
+- Add menu: debugging > list all controls (+text)?
 ? Pre-fill [AutoSwitchException] If values don't exist
   (taskmgr, pspad, etc. Will be depending on localization
   Open, Öffnen, Ouvrir, etc. MAybe only English? )
+- Simplify AutoSwitchException UI
+
+2021-03-17
+V Fix where eddress wasn't in Edit2: Analyze control structure
 
 
 2021-03-16
@@ -1072,6 +1076,10 @@ V Optimize timings (currently quite slow)
 - When no INI: create these entries.
 - Check all functions on return value.
 - Try to make path entering less "blinking" (fill (hidden) edit first)
+- Replace Total Commander 'copy to clipboard' routine to something else
+  (requires lots of testing, so keep it this way for now)
+- Load at startup
+- system tray menu (+icon)
 - TEST
 ? Keep dialog-list in memory. Re-read when changes are made.
 ? Own copy of file manager icons? (instead of reading exe)
