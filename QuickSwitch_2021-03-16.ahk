@@ -521,11 +521,11 @@ Return
 
 
 	;	Activate radiobutton for current setting (depends on INI setting)
+	;	Only show AutoSwitchException if AutoSwitch is activated.
 
 		If ($DialogAction = 1)
 		{
 			Menu ContextMenu, Check, Allow AutoSwitch
-		;	Only show AutoSwitchException if AutoSwitch is activated.
 			Menu ContextMenu, Add,  AutoSwitch exception, AutoSwitchException
 		}
 		Else If ($DialogAction = 0)
@@ -543,6 +543,7 @@ Return
 
 	;	Menu ContextMenu, Standard
 	;	BAckup to prevent errors
+	
 		Menu ContextMenu, UseErrorLevel
 
 		Menu ContextMenu, Color, C0C59C
@@ -593,7 +594,7 @@ Return
 	$DialogAction := 1
 
 	$FolderPath := Get_Zfolder($WinID)
-	MsgBox FolderPath = %$FolderPath%
+;	MsgBox FolderPath = %$FolderPath%
 
 	If ( ValidFolder( $FolderPath ))
 	{ 
@@ -668,7 +669,6 @@ Return
 	
 	)
 	
-	; If not OK, return
 	IfMsgBox OK
 	{
 	
@@ -721,7 +721,6 @@ Return
 
 			} Else
 			{
-				MsgBox 2DO: Add the following to %$INI%: `n`n`n 	%$FingerPrint%=%Delta%
 				IniWrite, %Delta%,		%$INI%, AutoSwitchException, %$FingerPrint%
 			}
 
@@ -972,8 +971,7 @@ FeedDialog routine
 
 2DO Priority
 
-- Code cleanup/restructure
-V work out all 2do entries in code.
+- naming structure of variables 
 - TEST !!!
 - New menu /UI (no inspiration yet on how that should look ..)
 - Support paths > 259 ? (max length menu text = 260, so requirea a new menu) 
@@ -984,6 +982,8 @@ V work out all 2do entries in code.
 
 
 2021-03-16
+V Code cleanup/restructure
+V work out all 2do entries in code.
 
 
 
