@@ -4,7 +4,7 @@
 QuickSwitch is an alternative to [Listary's QuickSwitch](https://www.youtube.com/watch?v=9T9-OtRVeUw) as that is abandoned.
 <br />
 <br />
-### What does QuickSwitch do? - the short version
+### What does QuickSwitch do?
 
 When in a file dialog, like Save As .. or Open ... , it can switch that dialog to any folder that is opened in a file manager.
 Currently supported file managers: File Explorer, **Directory Opus**, Total Commander and XYPlorer.
@@ -38,10 +38,7 @@ In short, this lets QuickSwitch figure out and learn what the correct "window-di
 The next time, that will be used. and AutoSwitch should work again.
 <br />
 <br />
-## What does QuickSwitch do? -more details
-to do ...
-<br />
-<br />
+
 ## QuickSwitch is not finished yet ...
 ... but it should be fully functional in it's current form.
 
